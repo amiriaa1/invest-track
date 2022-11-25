@@ -26,5 +26,7 @@ $terms_and_conditions=1;
 $show_remaining=0;
 $homeworks_page_by_page = 1;
 $user_can_delete_course=0;
+
+
 error_reporting(0);
 ?>
