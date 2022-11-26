@@ -49,20 +49,13 @@ $system_settings = $settings_class->SystemSettings();
 $dir = $system_settings["dir"];
 $theme = $system_settings["theme"];
 $language = $system_settings["language"];
-$jamaa_active = $system_settings["jamaa_active"];
-$files_final_size = $system_settings["files_final_size"];
-$bulk_email = $system_settings["bulk_email"];
+
 $maintenance = $system_settings["maintenance"];
 $system_title = $system_settings["system_title"];
-$institute_name = $system_settings["institute_name"];
-$allow_user_modify_profile = $system_settings["allow_user_modify_profile"];
+
 $uusername_title = $system_settings["uusername_title"];
-$admins_message = stripcslashes($system_settings["admins_message"]);
-$maintenance_pm = stripcslashes($system_settings["maintenance_pm"]);
-$sms_admin_addpaymen = $system_settings["sms_admin_addpaymen"];
+
 $maintenance = $system_settings["maintenance"];
-$sms_admin_login = $system_settings["sms_admin_login"];
-$wallet_status = $system_settings["wallet_status"];
 if ($dir =="ltr")
 {
 	$align1 = "right";
@@ -74,27 +67,15 @@ else
 	$align2 = "right";
 }
 
-include_once('../include/jdf.php');
+
 include_once('../include/functions.php');
 include_once('../language/'.$language.'.php');
 include_once('../include/class.admin.php');
 include_once('../include/class.student.php');
-include_once('../include/class.teacher.php');
-include_once('../include/class.term.php');
-include_once('../include/class.class.php');
-include_once('../include/class.level.php');
-include_once('../include/class.major.php');
-include_once('../include/class.score_column.php');
-include_once('../include/class.unit.php');
 include_once('../include/class.fee.php');
-include_once('../include/class.lesson.php');
-include_once('../include/class.course.php');
-include_once('../include/class.objection.php');
-include_once('../include/class.course-student.php');
-include_once('../include/class.homework.php');
-include_once('../include/class.pm.php');
+
 $admin = new ManageAdmins();
-$pm = new ManagePMs();
+
 if($isLogedIn)
 {
 	if($cookie==0)
