@@ -1,6 +1,6 @@
 <?php
 include_once('main.php');
-
+echo'<link rel="canonical" href="https://my.buynex.info/register" />';
 
 
 

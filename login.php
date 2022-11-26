@@ -1,6 +1,6 @@
 <?php
 
-
+echo'<link rel="canonical" href="https://my.buynex.info/login" />';
 $login_needed=0;
 include_once('main.php');
 if(!$isLogedIn)
