@@ -45,7 +45,7 @@ echo'
 				  </div>
 				  <div class="flexbox align-items-center mt-25">
 					<div>
-					  <p class="no-margin">'.$discountProp['wallet'].'<span class="text-gray">BTC</span></p>
+					  <p class="no-margin">'.$discountProp['wallet'].'<span class="text-gray"></span></p>
 					</div>
 					
 				  </div>
