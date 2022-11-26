@@ -63,7 +63,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 	'Accept: */*',
 	'Content-Length: ' . strlen($data_string),
 	'Content-Type: application/json',
-	'api-key: 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'
+	'api-key: '.$sendinblueapikey.''
 	)                                                                     
 );                                                                                                                   
                                                                                                                      

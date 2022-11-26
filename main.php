@@ -55,6 +55,7 @@ $language = $system_settings["language"];
 $institute_name = $system_settings["institute_name"];
 $system_title = $system_settings["system_title"];
 $uusername_title = $system_settings["uusername_title"];
+$sendinblueapikey = $system_settings["gateway1_key"];
 
 
 
