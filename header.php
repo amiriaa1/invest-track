@@ -51,18 +51,19 @@ if($system_settings["maintenance"]==1)
 
   <header class="main-header">
 	  <div class="inside-header">
-		  <div class="d-flex align-items-center logo-box justify-content-between">	
+		  <div>	
 			<a href="index" class="logo">			  
-			  <div class="logo-mini">
-				  <span class="light-logo"><img src="images/logo.png" alt="logo"></span>
-				  <span class="dark-logo"><img src="images/logo.png" alt="logo"></span>
+			  <div>
+				  <span class="light-logo"><img src="images/logo2.png" alt="logo"></span>
+				  <span class="dark-logo"><img src="images/logo2.png" alt="logo"></span>
 			  </div>
 			  <div class="logo-lg">
-				  <span class="light-logo"><img src="images/logo.png" alt="logo"></span>
-				  <span class="dark-logo"><img src="images/logo.png" alt="logo"></span>
+				  <span class="light-logo"><img src="images/logo2.png" alt="logo"></span>
+				  <span class="dark-logo"><img src="images/logo2.png" alt="logo"></span>
 			  </div>
-			</a>	
+		</a>	
 		  </div>
+		
 		<!-- Header Navbar -->
 		<nav class="navbar navbar-static-top">
 		  <!-- Sidebar toggle button-->
