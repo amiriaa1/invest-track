@@ -142,12 +142,19 @@ echo'
 						echo '<td style="text-align:left;">
 									<!-- Split button -->
 									<div class="btn-group">
+									';
+									if(!$discountProp['admin_status']==1){
+									echo'
+									
 									<a href="withdraw?cheque_passed='.$discountProp['upid'].'">
 										<button type="submit" class="btn btn-rounded btn-info">Approve</button></a>
 										
 										
 							
-										
+										';
+									}
+									else{echo'Approved befor';}
+										echo'
 									</div>
 								</td>';
 						echo '<td style="text-align:center;">
