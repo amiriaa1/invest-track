@@ -17,7 +17,11 @@ function AddStudent($aid,$uusername,$upass,$uactive,$uexpiration_date,$ufaname,$
  return $counts; }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+function UsetTwoFactorupdate($mobile)
+ { global $table_prefix; 
+ $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `uactive`=1 WHERE `umobile`=?");
+ $values = array($mobile); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
+ 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
  
