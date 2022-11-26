@@ -308,7 +308,7 @@ echo'
 	<div class="auth-2-outer row align-items-center h-p100 m-0">
 		<div class="auth-2">
 		  <div class="auth-logo font-size-30">
-			<img src="images/11.jpg" alt="logo">
+			<img src="images/logo.png" alt="logo">
 		  </div>
 		  <!-- /.login-logo -->
 		  <div class="auth-body">
