@@ -76,10 +76,6 @@ curl_close($ch);
 $data2 = json_decode(trim($result), TRUE);
 
 
-
-
-
-
 echo'
 
 <!DOCTYPE html>
@@ -110,7 +106,7 @@ echo'
 	<div class="auth-2-outer row align-items-center h-p100 m-0">
 		<div class="auth-2">
 		  <div class="auth-logo font-size-30">
-			<a href="index.html" class="text-dark"><b>Crypto</b>Admin</a>
+			<a href="index" class="text-dark2" ><b>BUYNEX</b>member</a>
 		  </div>
 		  <!-- /.login-logo -->
 		  <div class="auth-body">
