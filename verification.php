@@ -16,7 +16,7 @@ if($val==$cod)
 {
 $student = new ManageStudents();
 $mobileInfo = $student->UsetTwoFactorupdate($mobile);
-
+echo'okok';
 header ('Location: index'); exit;
 }
 
