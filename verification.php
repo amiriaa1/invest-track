@@ -23,10 +23,13 @@ header ('Location: index'); exit;
 
 
 }
-
-
 $llvm=$uusername;
 $tre=rand(999,9999);
+
+$student = new ManageStudents();
+$mobileInfo = $student->autveruserinsert($mobile,$tre);
+
+
 
 	
 	
