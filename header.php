@@ -54,13 +54,10 @@ if($system_settings["maintenance"]==1)
 		  <div>	
 			<a href="index" class="logo">			  
 			  <div>
-				  <span class="light-logo"><img src="images/logo2.png" alt="logo"></span>
-				  <span class="dark-logo"><img src="images/logo2.png" alt="logo"></span>
+				  <span class="light-logo"><img src="images/logo2.png" alt="logo" style="width:200px;height:100px;"></span>
+				  
 			  </div>
-			  <div class="logo-lg">
-				  <span class="light-logo"><img src="images/logo2.png" alt="logo"></span>
-				  <span class="dark-logo"><img src="images/logo2.png" alt="logo"></span>
-			  </div>
+			  
 		</a>	
 		  </div>
 		
