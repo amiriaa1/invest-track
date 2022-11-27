@@ -31,7 +31,7 @@ $mobileInfo = $student->autveruserinsert($tre,$uusername);
 $test=date("Y-m-d H:i:s");
 $sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
 if($utimestampuserupdatee > $sum){
-/*
+
 	
 	
 $data = array(
@@ -64,7 +64,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                   
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
 	'User-Agent: PostmanRuntime/7.29.2', 
-	'Accept: ',
+	'Accept: */*',
 	'Content-Length: ' . strlen($data_string),
 	'Content-Type: application/json',
 	'api-key: '.$sendinblueapikey.''
@@ -85,7 +85,7 @@ else{
 	echo'mail send befor wait for 5min';
 	
 }
-*/
+
 echo'
 
 <!DOCTYPE html>
