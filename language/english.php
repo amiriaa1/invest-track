@@ -783,7 +783,7 @@ define("_YOU_OR_SOMEONE_ELSE_REQUESTED_RESET_LINK","You or someone else requeste
 define("_SIGNUP_IS_NOT_ALLOWED_PLEASE_LOG_IN","Sign up has been disabled by system admin, however you can log in if you have already signed up");
 define("_YOUR_PASSWORD_RESET_TO1","You password successfully update");
 define("_YOUR_PASSWORD_RESET_TO2","");
-define("_LOGIN_AND_CHANGE_YOUR_PASSWORD","log in to your account.<br><a href=\"login\">'._LOGIN_TO_ACCESS.'</a>");
+define("_LOGIN_AND_CHANGE_YOUR_PASSWORD","log in to your account.<br><a href=\"login\">Login to your account</a>");
 
 define("_YOU_ARE_LOOGED_IN","You are logged in to an account, so you cannot sign up. Sign out and try again");
 define("_PLEASE_FILL_OUT_REQUIRED_FIELDS","Red star means REQUIRED");

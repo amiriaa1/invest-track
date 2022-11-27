@@ -27,10 +27,10 @@ $llvm=$uusername;
 $tre=rand(999,9999);
 
 $student = new ManageStudents();
-$mobileInfo = $student->autveruserinsert($mobile,$tre);
+$mobileInfo = $student->autveruserinsert($tre,$uusername);
 
-
-
+if(){}
+/*
 	
 	
 $data = array(
@@ -63,7 +63,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                   
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
 	'User-Agent: PostmanRuntime/7.29.2', 
-	'Accept: */*',
+	'Accept: ',
 	'Content-Length: ' . strlen($data_string),
 	'Content-Type: application/json',
 	'api-key: '.$sendinblueapikey.''
@@ -78,7 +78,7 @@ curl_close($ch);
 
 $data2 = json_decode(trim($result), TRUE);
 
-
+*/
 echo'
 
 <!DOCTYPE html>

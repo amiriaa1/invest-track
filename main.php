@@ -59,7 +59,6 @@ $sendinblueapikey = $system_settings["gateway1_key"];
 
 
 
-
 include_once('language/'.$language.'.php');
 include_once('include/class.student.php');
 include_once('include/class.fee.php');
@@ -84,7 +83,7 @@ if($isLogedIn)
 	$uusername=$studentProp['uusername'];
 	$referral=$studentProp['umobile'];
 	$ucomment=$studentProp['ucomment'];
-	
+	$utimestampuserupdatee=$studentProp['utimestamp'];
 }
 
 if ($dir=="rtl")

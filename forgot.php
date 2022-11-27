@@ -55,7 +55,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 	'Accept: */*',
 	'Content-Length: ' . strlen($data_string),
 	'Content-Type: application/json',
-	'api-key: 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'
+	'api-key: '.$sendinblueapikey.''
 	)                                                                     
 );                                                                                                                   
                                                                                                                      
@@ -125,7 +125,7 @@ echo'
 	<div class="auth-2-outer row align-items-center h-p100 m-0">
 		<div class="auth-2">
 		  <div class="auth-logo font-size-30">
-			<a href="index" class="text-dark"><b>Crypto</b>Member</a>
+			<a href="index" class="text-dark2" ><b>BUYNEX</b>member</a>
 		  </div>
 		  <!-- /.login-logo -->
 		  <div class="auth-body">

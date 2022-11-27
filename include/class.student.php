@@ -23,10 +23,10 @@ function UsetTwoFactorupdate($mobile)
  $values = array($mobile); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- function autveruserinsert($mobile,$tre)
+ function autveruserinsert($tre,$uusername)
  { global $table_prefix; 
- $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `autver`=1 WHERE `uusername`=?");
- $values = array($mobile,$tre); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
+ $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `autver`=? WHERE `uusername`=?");
+ $values = array($tre,$uusername); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
  
  
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -153,7 +153,7 @@ function ResetPassword($uid,$upass)
  
 
  function UserResetPassword($email,$upass)
- { global $table_prefix; $upass = md5($upass); $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `upass`=? WHERE `uemail`=?");
+ { global $table_prefix; $upass = md5($upass); $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `upass`=? WHERE `uusername`=?");
  $values = array($upass,$email); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
  
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
