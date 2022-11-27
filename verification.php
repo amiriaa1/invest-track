@@ -28,8 +28,9 @@ $tre=rand(999,9999);
 
 $student = new ManageStudents();
 $mobileInfo = $student->autveruserinsert($tre,$uusername);
-
-if(){}
+$test=date("Y-m-d H:i:s");
+$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
+if($utimestampuserupdatee > $sum){
 /*
 	
 	
@@ -77,7 +78,13 @@ curl_close($ch);
 //var_dump(json_decode($result, true));
 
 $data2 = json_decode(trim($result), TRUE);
+}
 
+else{
+	
+	echo'mail send befor wait for 5min';
+	
+}
 */
 echo'
 
