@@ -67,7 +67,15 @@ if(!$isLogedIn)
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
-
+<meta name="keywords" content="Buynex,Investment Systems,Capital stock,Private investment,Interest rate">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="BUYNEX" />
+<meta property="og:description" content="Invest your money in the best solver problem"/>
+    <meta property="og:image" content="https://buynex.info/images/logo2.png" />
+    <meta property="og:url" content="https://buynex.info/" />
+    <meta property="og:site_name" content="Buynex" />
+    <meta name="og:region" content="cupertino" />
+    <meta name="og:country-name" content="California" />
   
 
     <title>' . $system_title . ' reset password</title>

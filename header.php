@@ -21,7 +21,15 @@ echo'
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="'.$system_title.'">
-	<meta name="keywords" content="'.str_replace(' ',',',$system_title).'">
+	<meta name="keywords" content="Buynex,Investment Systems,Capital stock,Private investment,Interest rate">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="BUYNEX" />
+<meta property="og:description" content="Invest your money in the best solver problem"/>
+    <meta property="og:image" content="https://buynex.info/images/logo2.png" />
+    <meta property="og:url" content="https://buynex.info/" />
+    <meta property="og:site_name" content="Buynex" />
+    <meta name="og:region" content="cupertino" />
+    <meta name="og:country-name" content="California" />
 	<meta name="generator" content="royaal">';
 		if(!isset($responsive) || $responsive==1)
 			
