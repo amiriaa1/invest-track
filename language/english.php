@@ -15,6 +15,8 @@ define("_CHECK_ALL","Checl all");
 define("_USERNAME_VALID_CHARACTERS","Valid Characters: A-Z a-z 0-9 _  Length: 1 50 to characters");
 
 /////Menu
+define("_MAIL_SEND_CHEK","CONFIRM MAIL SEND TO YOU");
+define("_MAIL_NOT_SEND_WAIT_5_MIN","mail send befor for sending again wait 5 min");
 define("_ADMIN_BASIC_INFORMATION_MANAGEMENT","Base");
 define("_ADMIN_ADD_LEVEL","Add Level");
 define("_ADMIN_LIST_LEVELS","List Levels");

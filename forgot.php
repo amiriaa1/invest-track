@@ -14,67 +14,31 @@ if (isset($_POST["email"]))
 			
 
 						$security_key = $student->SendResetLink($email);
-						
-						
+						$studentProp=$student->GetStudentInfo($email);
+						$utimestampuserupdatee=$studentProp['utimestamp'];
 						if($security_key!="0")
 						{
-						$success = _A_LINK_SEND_TO_YOUR_MAIL_CLICK_ON_THAT;	
-							
-								
-$data = array(
+						
 
- "sender" => [
-"name" => "buynex",
-"email" => "info@buynex.info",
 
-],
- "to" => [	
- 
- [
- 
- "email" => $email,
-"name" => "users",
- ],
+$test=date("Y-m-d H:i:s");
+$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
+if($test < $sum){
+$error = _MAIL_NOT_SEND_WAIT_5_MIN;	
+echo'
+<br>'.$sum.'<br>
+<br>'.$test.'<br>
+';
+}
 
- ],
- "subject" => "forgot pass confirm key",
-"htmlContent" => "<html><head></head><body><p>Hello,</p><a href=\"my.buynex.info/login?op=reset&email=".$email."&security_key=".$security_key."\">click on this link for reset password</a>
-</p></body></html>" 
-);           
+else{
+	$success = _A_LINK_SEND_TO_YOUR_MAIL_CLICK_ON_THAT;	
 	
-	
-                                                         
-$data_string = json_encode($data);                                                                                   
-                                                                                                                     
-$ch = curl_init('https://api.sendinblue.com/v3/smtp/email');                                                                      
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                                                                                     
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                   
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-	'User-Agent: PostmanRuntime/7.29.2', 
-	'Accept: */*',
-	'Content-Length: ' . strlen($data_string),
-	'Content-Type: application/json',
-	'api-key: '.$sendinblueapikey.''
-	)                                                                     
-);                                                                                                                   
-                                                                                                                     
-$result = curl_exec($ch);
+	sendemailforgot($email,$security_key);
 
-curl_close($ch);
+}
 
-//var_dump(json_decode($result, true));
-
-$data2 = json_decode(trim($result), TRUE);
-
-
-
-
-
-
-
-
-							
+						
 						
 						
 						

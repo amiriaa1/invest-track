@@ -44,6 +44,7 @@ if(!$db_connection->connect())
 }
 include_once('include/class.admin.php');
 include_once('include/functions.php');
+include_once('func.php');
 include_once('include/class.settings.php');
 $settings_class = new ManageSettings();
 $system_settings = $settings_class->SystemSettings();
@@ -84,6 +85,7 @@ if($isLogedIn)
 	$referral=$studentProp['umobile'];
 	$ucomment=$studentProp['ucomment'];
 	$utimestampuserupdatee=$studentProp['utimestamp'];
+	$autver=$studentProp['autver'];
 }
 
 if ($dir=="rtl")

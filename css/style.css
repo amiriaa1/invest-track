@@ -101,6 +101,11 @@ h1, h2, h3, .h1, .h2, .h3 {
 
 img {
   max-width: 100%; }
+.alert
+{
+	color:black;
+}
+
 
 .img-fluid {
   width: 100%; }
@@ -23108,7 +23113,8 @@ img.away, img.busy, img.offline, img.online {
   
   .text-dark2  {
   color: #FFC300 !important; }
-
+.text-dark3  {
+  color: black !important; }
 /*---ico-progress---*/
 .new-progress-wrap {
   min-width: 600px; }

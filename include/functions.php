@@ -18,9 +18,11 @@ function aasort (&$array, $key, $order) {
 	$array=$ret;
 }
 
-include_once('main.php');
+include_once('../main.php');
 function investrefcod($ucomment1,$uusername,$amount2)
 {	
+
+
 $fee=new ManageFees();
 $student = new ManageStudents();
 
@@ -62,6 +64,8 @@ else
 {echo'the referral cod  not finde';}
 return $ccvggt;
 }
+
+
 
 
 function getRealIpAddr()
@@ -1528,11 +1532,11 @@ if($totalPayableCost>0)
 }
 function Success($message)
 {
-	echo '<div class="alert alert-success">'.$message.'.</div>';
+	echo '<div class="text-dark3 alert-success">'.$message.'.</div>';
 }
 function Failure($message)
 {
-	echo '<div class="alert alert-danger">'.$message.'!</div>';
+	echo '<div class="text-dark3 alert-danger" >'.$message.'!</div>';
 }
 
 function getPMs($type,$xid,$start)
