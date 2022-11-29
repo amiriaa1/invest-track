@@ -4,6 +4,7 @@ require_once('config.php');
 ini_set('session.cookie_httponly',true);
 session_start();
 $cookie = (isset($_COOKIE[$user_session_name])?1:0);
+date_default_timezone_set('Europe/London');
 if($cookie==0)
 {
 	//Protecting against SESSION Hijaking
