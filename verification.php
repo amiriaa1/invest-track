@@ -33,7 +33,7 @@ $sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
 
 
    
-if($test < $sum OR $utimestampuserupdatee==NULL)
+if($test < $sum OR $utimestampuserupdatee=='')
 {$Failure=1;}
 else{
 	
