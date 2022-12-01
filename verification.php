@@ -29,18 +29,11 @@ $llvm=$uusername;
 
 $test=date("Y-m-d H:i:s");
 $sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
-if($test < $sum){
-$Failure=1;
-
-}
-
-else{
-	
-	
-	sendemailverfy($llvm);
-
-}
-
+sendemailverfy($llvm);
+/*
+if($test < $sum){$Failure=1;}
+else{}
+*/
 echo'
 
 <!DOCTYPE html>

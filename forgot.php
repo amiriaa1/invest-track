@@ -23,19 +23,12 @@ if (isset($_POST["email"]))
 
 $test=date("Y-m-d H:i:s");
 $sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
-if($test < $sum){
-$error = _MAIL_NOT_SEND_WAIT_5_MIN;	
+sendemailforgot($email,$security_key);
+/*
+if($test < $sum){$error = _MAIL_NOT_SEND_WAIT_5_MIN;}
+else{$success = _A_LINK_SEND_TO_YOUR_MAIL_CLICK_ON_THAT;}
 
-}
-
-else{
-	$success = _A_LINK_SEND_TO_YOUR_MAIL_CLICK_ON_THAT;	
-	
-	sendemailforgot($email,$security_key);
-
-}
-
-						
+	*/					
 						
 						
 						
