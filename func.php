@@ -116,7 +116,7 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 
-var_dump(json_decode($result, true));
+//var_dump(json_decode($result, true));
 
 $data2 = json_decode(trim($result), TRUE);
 
