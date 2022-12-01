@@ -12,11 +12,19 @@ echo'
 <br>saat get sql: '.$utimestampuserupdatee.'<br>
 ';
 
+
 if($test > $sum OR $utimestampuserupdatee==NULL)
-{echo'mail send';}
+{
+	echo'enja';}
+
+
 else{
-	echo'nashode';}
 	
+	echo'onjahas';
+
+
+	
+	}
 	
 
 
