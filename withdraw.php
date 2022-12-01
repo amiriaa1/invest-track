@@ -88,7 +88,7 @@ echo'
 
  <div class="box box-default">
 			<div class="box-header with-border">
-			  <h4 class="box-title">Client deposit</h4>
+			  <h4 class="box-title">Client withdraw</h4>
 			 		
 			</div>
 			<!-- /.box-header -->
