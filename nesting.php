@@ -3,6 +3,28 @@
 require_once('main.php');
 
 
-$llvm=$uusername;
-sendemailverfy($llvm);
+$test=date("Y-m-d H:i:s");
+$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 1 minute'));
+echo'
+
+<br>alan: '.$test.'<br>
+<br>jam kol: '.$sum.'<br>
+<br>saat get sql: '.$utimestampuserupdatee.'<br>
+';
+
+if($test < $sum)
+
+{
+	
+	echo'nashode';
+	
+}
+
+else{
+	
+	echo'mail send';
+	
+}
+
+
 ?>

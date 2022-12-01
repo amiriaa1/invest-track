@@ -23,10 +23,10 @@ function UsetTwoFactorupdate($mobile)
  $values = array($mobile); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- function autveruserinsert($tre,$uusername)
+ function autveruserinsert($tre,$tre2,$uusername)
  { global $table_prefix; 
- $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `autver`=? WHERE `uusername`=?");
- $values = array($tre,$uusername); $query->execute($values); $counts = $query->rowCount(); return $counts; } 
+ $query = $this->link->prepare("UPDATE `".$table_prefix."users` SET `autver`=? , `aut_time_add`=? WHERE `uusername`=?");
+ $values = array($tre,$tre2,$uusername); $query->execute($values);  $counts = $query->rowCount(); return $counts; } 
  
  
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -85,7 +85,7 @@ if($isLogedIn)
 	$uusername=$studentProp['uusername'];
 	$referral=$studentProp['umobile'];
 	$ucomment=$studentProp['ucomment'];
-	$utimestampuserupdatee=$studentProp['utimestamp'];
+	$utimestampuserupdatee=$studentProp['aut_time_add'];
 	$autver=$studentProp['autver'];
 }
 

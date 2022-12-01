@@ -55,11 +55,13 @@ curl_close($ch);
 
 $data2 = json_decode(trim($result), TRUE);
 
-
+$tre2=date("Y-m-d H:i:s");
 $tre=rand(999,9999);
 $student = new ManageStudents();
-$mobileInfo = $student->autveruserinsert($tre,$email);	
+$mobileInfo = $student->autveruserinsert($tre,$tre2,$email);	
 
+
+	
 
 }
 
@@ -73,7 +75,7 @@ $email_temp = $system_settings["teachers_message"];
 $email_temp2 = $system_settings["users_message"];
 $tre=rand(999,9999);
 
-
+$tre2=date("Y-m-d H:i:s");
 
 $data = array(
 
@@ -120,8 +122,10 @@ curl_close($ch);
 
 $data2 = json_decode(trim($result), TRUE);
 
+$tre2=date("Y-m-d H:i:s");
 $student = new ManageStudents();
-$mobileInfo = $student->autveruserinsert($tre,$llvm);	
+$mobileInfo = $student->autveruserinsert($tre,$tre2,$llvm);	
+	
 
 }
 
