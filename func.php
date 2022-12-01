@@ -69,7 +69,8 @@ include_once('main.php');
 $settings_class = new ManageSettings();
 $system_settings = $settings_class->SystemSettings();
 $sendinblueapikey = $system_settings["gateway1_key"];
-
+$email_temp = $system_settings["teachers_message"];
+$email_temp2 = $system_settings["users_message"];
 $tre=rand(999,9999);
 
 
@@ -91,7 +92,7 @@ $data = array(
 
  ],
  "subject" => "confirm key",
-"htmlContent" => "<html><head></head><body><p>Hello,</p>its youre confirm key : $tre  .</p></body></html>" 
+"htmlContent" => " $email_temp $tre $email_temp2 " 
 );           
 	
 	
@@ -115,7 +116,7 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 
-//var_dump(json_decode($result, true));
+var_dump(json_decode($result, true));
 
 $data2 = json_decode(trim($result), TRUE);
 
