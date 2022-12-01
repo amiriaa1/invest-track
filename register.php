@@ -215,7 +215,38 @@ echo'
 </head>
 
 <body class="hold-transition theme-yellow bg-img" style="background-image: url(images/auth-bg/bg.jpg)" data-overlay="3">
-	
+	<!-- Modal -->
+  <div class="modal center-modal fade" id="modal-center" tabindex="-1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Terms and conditions</h5>
+			<button type="button" class="close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<p>1: You can deposit any amount to your wallet in buynex , but the minimum investment amount is $1000.<br><br>
+
+2: buynex s interest rate is 4.8%, which is paid monthly.<br><br>
+
+3: buynex s contract with the investor is for 1 year and after 365 days from the date of deposit, the capital can be withdrawn.<br><br>
+
+4: All withdrawals, including monthly profit, referral bonus, VIP member bonus can be done on the 1st of every month.
+In the first month of investment, your interest will be paid in proportion to the number of days left until the first of the month, and from the second month, you will receive thirty days in full equivalent to 4.8%.
+<br><br>
+5: Referral bonus for regular members will be paid 0.5% for 12 months and only to the first level.
+<br><br>
+6: buynex is against paying referral bonuses in a pyramid scheme, but VIP members are exception and can get referral bonuses up to the second level.
+<br><br>
+
+7: buynex only works with the networks transfer tether USDT included in the deposit section, transferring Tether to another network will cause your money to be lost in the blockchain network.</p>
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+  <!-- /.modal -->
 	<div class="auth-2-outer row align-items-center h-p100 m-0">
 		<div class="auth-2">
 		  <div class="auth-logo font-size-30">
@@ -265,7 +296,7 @@ echo'
 				<div class="col-12">
 				  <div class="checkbox">
 					<input type="checkbox" id="basic_checkbox_1" >
-					<label for="basic_checkbox_1" class="text-dark">I agree to the <a href="#" class="text-danger"><b>Terms</b></a></label>
+					<label for="basic_checkbox_1" class="text-dark">I agree to the <a data-toggle="modal" data-target="#modal-center" class="text-danger"><b>Terms</b></a></label>
 				  </div>
 				</div>
 				<!-- /.col -->
@@ -300,6 +331,13 @@ echo'
 </html>
 
 ';
+echo'
 
+
+<script src="js/jquery.smartmenus.js"></script>
+<script src="js/menus.js"></script>
+<script src="js/template.js"></script>
+
+';
 
 ?>
