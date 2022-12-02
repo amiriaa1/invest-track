@@ -28,7 +28,11 @@ $llvm=$uusername;
 
 
 $test=date("Y-m-d H:i:s");
-$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 1 minute'));
+$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
+$avttime=strtotime($sum)-strtotime($test); 
+$timemin=round($timemin, 0);
+$timemin=$avttime/60;
+$timemin=round($timemin, 0);
 
 
 
@@ -90,7 +94,7 @@ echo'
 				<h3 class="mx-auto text-dark">confirm youre email</h3>			  
 			  </div>	
 ';
-if($Failure==1){Failure(_MAIL_NOT_SEND_WAIT_5_MIN);}
+if($Failure==1){Failure(_MAIL_NOT_SEND_WAIT_5_MIN);echo'Time left: '.$timemin.'min';}
 else
 {
 	Success(_MAIL_SEND_CHEK);
