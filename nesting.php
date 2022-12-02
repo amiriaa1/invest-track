@@ -2,7 +2,7 @@
 
 require_once('main.php');
 
-
+$llvm=$uusername;
 $test=date("Y-m-d H:i:s");
 $sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 1 minute'));
 echo'
@@ -15,6 +15,7 @@ echo'
 
 if($test > $sum OR $utimestampuserupdatee==NULL)
 {
+	sendemailverfy($llvm)
 	echo'enja';}
 
 
