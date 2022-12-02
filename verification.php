@@ -28,14 +28,24 @@ $llvm=$uusername;
 
 
 $test=date("Y-m-d H:i:s");
-$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
+$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 1 minute'));
+
 
 
 
 if($test > $sum OR $utimestampuserupdatee==NULL)
-{sendemailverfy($llvm);echo'enja';}
-else{echo'onjahas';
+{
+	sendemailverfy($llvm);
+	
+	}
+
+
+else{
+	
 	$Failure=1;
+
+
+	
 	}
 	
 
