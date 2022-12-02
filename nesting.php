@@ -15,8 +15,9 @@ echo'
 
 if($test > $sum OR $utimestampuserupdatee==NULL)
 {
-	sendemailverfy($llvm)
-	echo'enja';}
+	sendemailverfy($llvm);
+	echo'enja';
+	}
 
 
 else{
