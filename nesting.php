@@ -1,41 +1,10 @@
 <?php
 
-require_once('main.php');
-
-$llvm=$uusername;
-$test=date("Y-m-d H:i:s");
-$sum=date("Y-m-d H:i:s", strtotime($utimestampuserupdatee. ' + 5 minute'));
-$avttime=strtotime($sum)-strtotime($test); 
-$timemin=round($timemin, 0);
-$timemin=$avttime/60;
-$timemin=round($timemin, 0);
-
-echo'
-<br><br><br><br><br><br><br><br><br>
-<br>alan: '.$test.'<br>
-<br>jam kol: '.$sum.'<br>
-<br>saat get sql: '.$utimestampuserupdatee.'<br>
-<br>avttime: '.$timemin.'va saniye:  '.$avttime.'<br>
-';
 
 
-if($test > $sum OR $utimestampuserupdatee==NULL)
-{
-	sendemailverfy($llvm);
-	echo'enja';
-	}
+<style>
 
-
-else{
-	
-	echo'onjahas';
-
-
-	
-	}
-	
-
-
-
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}html,body{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}*{font-family:IRANSans,sans-serif;box-sizing:border-box;line-height:1.5}*::-webkit-scrollbar{width:10px;height:10px}*::-webkit-scrollbar-track{border-radius:0;box-shadow:none;border:0;background-color:#eaeaea;border-left:1px solid #c1c1c1}*::-webkit-scrollbar-button{background-size:100%;height:10px;width:10px;-webkit-box-shadow:inset 1px 1px 2px rgba(0,0,0,.2)}*::-webkit-scrollbar-thumb{border-radius:0;box-shadow:none;border:0;background-color:#c1c1c1}body{width:100vw;height:100vh;overflow:hidden}</style><link rel="stylesheet" href="styles.c6b3240512c53bf1.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.c6b3240512c53bf1.css"></noscript></head>
+<body>
 
 ?>
