@@ -142,7 +142,7 @@ echo'
 					';
 if($vip==1){
 					echo'
-					<span class="label label-success">youre are a vip user</span><br><br>
+					<span class="label label-success">you are a vip user</span><br><br>
 					
 					';
 					}
