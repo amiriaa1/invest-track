@@ -53,6 +53,10 @@ function AddUserPaymentdis($uid,$uppayment,$upgateway,$uptrack_code,$upcomment) 
 function updateUserinveststatus($nid) { global $table_prefix; $now = gmdate("Y-m-d H:i:s"); $query = $this->link->prepare("UPDATE `nim_invest` SET aactive='0' WHERE nid=? "); $values = array($nid); $query->execute($values); $counts = $query->rowCount(); return $counts;} 
 
 
+function updatevipstatususer($udid) { global $table_prefix; $now = gmdate("Y-m-d H:i:s"); $query = $this->link->prepare("UPDATE `nim_users` SET vip='1' WHERE uid=? "); $values = array($udid); $query->execute($values); $counts = $query->rowCount(); return $counts;} 
+
+function updatevipstatususer2($udid) { global $table_prefix; $now = gmdate("Y-m-d H:i:s"); $query = $this->link->prepare("UPDATE `nim_users` SET vip='0' WHERE uid=? "); $values = array($udid); $query->execute($values); $counts = $query->rowCount(); return $counts;} 
+
 
 function GetUserPayments($uid) { global $table_prefix; $query = $this->link->prepare("SELECT * FROM `".$table_prefix."user_payments` WHERE `uid`=?"); $values = array($uid); $query->execute($values); $result = $query->fetchAll(); return $result; }
 

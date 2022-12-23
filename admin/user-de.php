@@ -1,9 +1,39 @@
 <?php
-$login_needed=1;
+$login_needed=0;
 include_once('main.php');
 include_once('header.php');
 $student = new ManageStudents();
 $fee = new ManageFees();	
+if(isset($_GET['vip']))
+			{
+				
+				$udid=$_GET['vip'];
+				$discountList = $fee->updatevipstatususer($udid);
+				
+				echo'the user id '.$udid.' has get the vip <br>
+				
+				<a href="user-de?uid='.$udid.'">
+										<button type="submit" class="btn btn-rounded btn-info">back to user profile</button></a>
+				';
+				
+				exit;
+			}
+
+
+if(isset($_GET['deactive-vip']))
+			{
+				
+				$udid=$_GET['deactive-vip'];
+				$discountList = $fee->updatevipstatususer2($udid);
+				
+				echo'the user id '.$udid.' not vip anymore <br>
+				
+				<a href="user-de?uid='.$udid.'">
+										<button type="submit" class="btn btn-rounded btn-info">back to user profile</button></a>
+				';
+				
+				exit;
+			}
 
 
 
@@ -28,6 +58,8 @@ $disuserList = $student->GetStudentList($query);
 					$mainwallet1=$disuserProp['mainwallet'];
 					$referralwallet1=$disuserProp['referralwallet'];
 					$incomewallet1=$disuserProp['incomewallet'];
+					$vip=$disuserProp['vip'];
+					$uid2=$disuserProp['uid'];
 						
 					}
 	
@@ -56,11 +88,27 @@ $disuserList = $student->GetStudentList($query);
 
 					  <h2 class="profile-username text-center mb-0">'.$ufaname1.'</h2>
 
-					  <h4 class="text-center mt-0"><i class="fa fa-envelope-o mr-10"></i>'.$uusername1.'</h4>
-
+					  <h4 class="text-center mt-0"><i class="fa fa-envelope-o mr-10"></i>'.$uusername1.'</h4><center>
+';
+					if($vip==1){
+					echo'
+					<span class="label label-success">user is VIP</span><br><br>
+					<a href="user-de?deactive-vip='.$uid2.'">
+										<button type="submit" class="btn btn-rounded btn-info">dactive vip</button></a>
+					';
+					}
+					else{
+						echo'
+					<span class="label label-info">Not VIP</span><br><br>
+					<a href="user-de?vip='.$uid2.'">
+										<button type="submit" class="btn btn-rounded btn-info">grant user to vip</button></a>
+					';
+						
+					}
+					echo'
 					 
 
-					 
+					 </center>
 					</div>
 					<!-- /.box-body -->
 				  </div>
@@ -76,7 +124,6 @@ $disuserList = $student->GetStudentList($query);
 					<div class="box-body">
 					  <div class="row">
 						<div class="col-12">
-					
 					
 							<div class="form-group row">
 
