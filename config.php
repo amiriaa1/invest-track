@@ -1,8 +1,8 @@
 <?php
 $dbhost = 'localhost';
 $dbname = 'crypto';
-$dbuname = 'crtt';
-$dbpass = 'crtt';
+$dbuname = 'crypto';
+$dbpass = 'crypto';
 $table_prefix = 'nim_';
 
 //T Information

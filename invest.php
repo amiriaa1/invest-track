@@ -10,7 +10,7 @@ $userPayments = $fee->GetmaWalletList($uid);
 foreach ($userPayments as $userPayment) {
 	
 	$mainwallet=$userPayment['mainwallet'];
-	$vip=$userPayment['vip'];
+	
 }	
 $pid='';
 $Getinvestlistnoid = $fee->Getinvestlistnoid($pid);
@@ -139,15 +139,7 @@ echo'
 				<form  class="tab-wizard wizard-circle" action=""	method="post">
 					<!-- Step 1 -->
 					<h6>The capital can be withdrawn after one year</h6>
-					';
-if($vip==1){
-					echo'
-					<span class="label label-success">you are a vip user</span><br><br>
-					
-					';
-					}
-					
-					echo'
+
 					<section>
 						<div class="row">
 							<div class="col-md-6">

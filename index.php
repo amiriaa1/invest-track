@@ -28,6 +28,15 @@ echo'
 									<div class="col-xxxl-4 col-xl-5 col-12">
 										<div class="pl-md-30 pt-md-30 pr-md-80 pb-md-30 p-0">
 											<h5 class="text-uppercase font-weight-700">whidrable balance</h5>
+																';
+if($studentProp['vip']==1){
+					echo'
+					<img src="images/vip.png" alt="vip" style="width:130px;height:130px;"><br><br>
+					
+					';
+					}
+					
+					echo'
 											<h1 class="font-weight-900 text-dark mt-30">$'.$studentProp['mainwallet'].'</h1>
 											
 											<div class="d-md-flex d-block justify-content-between align-items-center">
