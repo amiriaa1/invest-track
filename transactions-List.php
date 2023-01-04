@@ -27,7 +27,7 @@ echo'
 							  <thead>					
 								<tr class="bg-dark">
 								  <th class="text-warning">Transaction Hash</th>
-								  <th class="text-warning">BTC</th>
+								  <th class="text-warning">USDT</th>
 								  <th class="text-warning">Time</th>
 								  <th class="text-warning">Miner Preference</th>
 								  <th class="text-warning">Status</th>
