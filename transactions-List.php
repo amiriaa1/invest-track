@@ -29,7 +29,7 @@ echo'
 								  <th class="text-warning">Transaction Hash</th>
 								  <th class="text-warning">USDT</th>
 								  <th class="text-warning">Time</th>
-								  <th class="text-warning">Miner Preference</th>
+								  <th class="text-warning">description</th>
 								  <th class="text-warning">Status</th>
 								</tr>
 							  </thead>
