@@ -129,4 +129,67 @@ $mobileInfo = $student->autveruserinsert($tre,$tre2,$llvm);
 
 }
 
+
+
+
+function sendemailnewinvest($llvm,$amount,$start_date)
+{	
+include_once('main.php');
+$settings_class = new ManageSettings();
+$system_settings = $settings_class->SystemSettings();
+$sendinblueapikey = $system_settings["gateway1_key"];
+$email_temp = $system_settings["admins_message"];
+$email_temp2 = $system_settings["exam_card_bottom_message"];
+
+
+$tre2=date("Y-m-d H:i:s");
+
+$data = array(
+
+ "sender" => [
+"name" => "buynex",
+"email" => "info@buynex.info",
+
+],
+ "to" => [	
+ 
+ [
+ 
+ "email" => $llvm,
+"name" => "users",
+ ],
+
+ ],
+ "subject" => "invest-buynex",
+"htmlContent" => " $email_temp $llvm -- $amount  -- $start_date $email_temp2 " 
+);           
+	
+	
+                                                         
+$data_string = json_encode($data);                                                                                   
+                                                                                                                     
+$ch = curl_init('https://api.sendinblue.com/v3/smtp/email');                                                                      
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                                                                                     
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                   
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+	'User-Agent: PostmanRuntime/7.29.2', 
+	'Accept: */*',
+	'Content-Length: ' . strlen($data_string),
+	'Content-Type: application/json',
+	'api-key: '.$sendinblueapikey.''
+	)                                                                     
+);                                                                                                                   
+                                                                                                                     
+$result = curl_exec($ch);
+
+curl_close($ch);
+
+//var_dump(json_decode($result, true));
+
+$data2 = json_decode(trim($result), TRUE);
+
+
+}
+
 ?>

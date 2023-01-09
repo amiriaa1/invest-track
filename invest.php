@@ -100,6 +100,8 @@ $fee->AddUserPayment($uidprob,$uppaymentdprob,0,$uptrack_codeprob,'deposit to in
 						$ucomment1=$ucomment;
 						
 						investrefcod($ucomment1,$uusername,$amount);
+						$llvm=$uusername;
+						sendemailnewinvest($llvm,$amount,$start_date);
 								
 							}
 							
