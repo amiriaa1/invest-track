@@ -88,7 +88,7 @@ function GetUserinvestlist($uusername) { global $table_prefix; $query = $this->l
     function Addinvestuser($amount,$expdate,$aactive,$uusername,$intrest,$investpack,$start_date) { global $table_prefix; $now = gmdate("Y-m-d H:i:s"); $query = $this->link->prepare("INSERT INTO `nim_invest` (`amount`,`expdate`,`aactive`,`uusername`,`intrest`,`investpack`,`start_date`) VALUES (?,?,?,?,?,?,?) "); $values = array($amount,$expdate,$aactive,$uusername,$intrest,$investpack,$start_date); $query->execute($values); $counts = $query->rowCount(); return $counts; }
 
     
-function GetreferalList($referral) { global $table_prefix; $query = $this->link->prepare("SELECT * FROM `nim_users`  WHERE ucomment=?"); $values = array($referral); $query->execute($values); $result = $query->fetchAll(); return $result; } 
+function GetreferalList($referral) { global $table_prefix; $query = $this->link->prepare("SELECT * FROM `nim_users`  WHERE ucomment=? AND uactive=1"); $values = array($referral); $query->execute($values); $result = $query->fetchAll(); return $result; } 
 
 function GetreferalListcod($ucomment1) { global $table_prefix; $query = $this->link->prepare("SELECT * FROM `nim_users`  WHERE umobile=?"); $values = array($ucomment1); $query->execute($values); $result = $query->fetchAll(); return $result; } 
 
