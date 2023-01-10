@@ -262,7 +262,7 @@ In the first month of investment, your interest will be paid in proportion to th
 				<span class="ion ion-person form-control-feedback text-dark"></span>
 			  </div>
 			  <div class="form-group has-feedback">
-				<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+				<input type="email" name="email" id="email" class="form-control" placeholder="Email" required data-validation-required-message="This field is required">
 				<span class="ion ion-email form-control-feedback text-dark"></span>
 			  </div>
 			  
