@@ -332,8 +332,9 @@ In the first month of investment, your interest will be paid in proportion to th
 
 ';
 echo'
-
-
+<script src="assets/vendor_components/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+<script src="js/pages/validation.js"></script>
+<script src="js/pages/form-validation.js"></script>
 <script src="js/jquery.smartmenus.js"></script>
 <script src="js/menus.js"></script>
 <script src="js/template.js"></script>
